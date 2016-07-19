@@ -1,191 +1,209 @@
-
-* {
-	padding: 0px;
-	margin: 0px;
-}
-body{
-	font-family: Tahoma, Arial, sans-serif;
-	background-image: url(../img/fon.png);
-}
-.warpper{
-	width: 1000px;
-	margin: 0 auto;
-  background: #fff;
-  height: 880px;
-}
-.header {
-	height: 178px;
-	border-bottom: 1px solid #128aa7;
-	position: relative;
-}
-/*.logot {
-	padding-left: 12px;
-	padding-top: 18px;
-}*/
-.contact{
-	float: right;
-	color: #5fa5bb;
-	padding-right: 20px;
-	padding-top: 20px;
-	line-height: 20px;
-}
-.contact h1{
-	font-size: 12px;
+body {
+    background-color: #0c739f;
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat-x;
+    font-family: Tahoma;
+    font-size: 0px;
 }
 
-.backg{
-	border-bottom: 2px solid #138aa7;
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
-.images{
-	  position: absolute;
-    right: 12px;
-    top: 110px;
-    line-height: 1px;
-	
-}
-.about {
- display:inline-block;
+.page {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
 }
 
-.about img {
- display:block;
+.gradient1 {
+    position: absolute;
+    
+	left: -6px;
+    top: 0px;
+    bottom: -3px;
+    right: -6px;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 2%, rgba(0,0,0,1) 98%, rgba(255,255,255,0) 100%);
 }
 
-.about a{
-  font-size: 12px;
-  text-decoration: underline;
-  color: #adced9;
+.logo {
+    float: left;
+    margin-top: 11px;
+    margin-left: 27px;
 }
 
-
-nav {
-  display: block;
-  width: 1000px;
-  
-}
-ul {
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-}
-.topmenu > li {
-  display: inline-block;
-  margin-right: 41px;
-  position: relative;
-}
-.topmenu > li:last-child {
-  margin-right: 0;
-}
-a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  outline: none;
-  font-family: serif;
-  transition: .5s linear;
+.contacts {
+    float: right;
+    margin-right: 34px;
+    margin-top: 7px;
+    color: #128aa7;
+    font-size: 12px;
+    line-height: 145%;
 }
 
-
-
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+.contacts a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
-submenu :after {
+.contacts p:first-child {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+header .first-section {
+    position: relative;
+}
+
+.countries {
+    position: absolute;
+    right: 27px;
+    bottom: 8px;
+    list-style: none;
+}
+
+.countries li {
+    float: left;
+}
+
+.countries li a {
+    display: block;
+    width: 55px;
+    padding-top: 43px;
+    color: #128aa7;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 10px;
+	background-image: url(../img/countries2.png);
+}
+
+li.india a {
+    background-position: 7px 0px;
+}
+li.nepal a {
+	background-position: -51px 0px;
+}
+li.tibet a {
+    background-position: -107px 0px;
+}
+li.bhutan a {
+    background-position: -162px 0px;
+}
+li.sri-lanka a {
+    background-position: -217px 0px;
+}
+li.maldives a {
+    background-position: -275px 0px;
+}
+
+.menu {
+    height: 34px;
+    background-image: url(../img/menu-bg.png);
+    color: white;
+    list-style: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.menu a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.menu li {
+    float: left;
+    position: relative;
+    line-height: 30px;
+    margin-left: 50px;
+}
+
+.submenu:after {
     content: ' ';
     float: right;
-    margin-top: 11px;
+	margin-top: 11px;
     margin-left: 4px;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 8px solid white;
-  }
-.one ul {
-  background: #323232;
-}
-.one ul a {
-  color: #fff;
-}
-.one .submenu {
-  display: none;
-  background: #323232;
-}
-.one ul li:hover .submenu {
-  display: block;
 }
 
-.infor{
-  width: 217px;
-  height: 423px;
-  background: #edeef0;
-  border-right: 1px solid #c7cacf
-}
-.leftColumn  h1{
-color: #424c43;
-font-size: 20px;
-padding: 10px 39px;
-}
-.leftColumn p{
-color: #424c43;
-line-height: 25px;
-padding-left: 21px;
-
-}
-.rightColumn p{
-color: #424c43;
-line-height: 25px;
-padding-left: 21px;
-
-}
-.rightColumn h1{
-color: #424c43;
-font-size: 20px;
-padding: 10px 72px;
+/* Выпадайщики*/
+.submenu ul {
+    position: absolute;
+    top: 30px;
+    left: -9999px;
+    padding-bottom: 8px;
+    padding-right: 40px;
+    padding-left: 10px;
+    color: white;
+    background-color: #303030;
+    list-style: none;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
 }
 
+.submenu ul li {
+    height: 16px;
+    margin-left: 0px;
+    padding-bottom: 6px;
+    font-weight: normal;
+}
 
-.fon {
-width: 1000px;
-overflow: hidden; /* С‡С‚РѕР±С‹ Р»РёС€РµРµ РѕР±СЂРµР·Р°Р»РѕСЃСЊ */
+.menu li:hover ul {
+    left: 0px;
 }
-.leftColumn {
-width: 250px;
-height: 423px;
-float: left;
-background: #edeef0;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
 
+/* Колонки контента */
+.content {
+    overflow: hidden;
+    color: #424c43;
+    text-align: center;
+    font-size: 12px;
 }
-.centerColumn {
-width: 500px;
-float: left;
-background: #ffff;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
+
+.left-column, .right-column {
+    float: left;
+    width: 208px;
+    padding-bottom: 20000px;/* для серенького слева и справа , и до контента */
+    margin-bottom: -20000px;
+    border-right: 1px solid #c7cacf;
+    border-left: 1px solid #c7cacf;
+    background-color: #edeef0;
+    font-size: 14px;
 }
-.rightColumn {
-width: 250px;
-height: 423px;
-float: left;
-background: #edeef0;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
+
+.center-column {
+    float: left;
+    width: 580px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
-.centerColumn p{
-  color: white;
+
+.content h2 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #424c43;
+    font-size: 18px;
+    font-weight: 600;
 }
-.footer p{
-  color: #b7cddb;
-  text-align: center;
-  margin-top: 10px;
+
+.content p {
+    padding-left: 15px;
+    text-align: left;
+    line-height: 172%;
+    letter-spacing: 0.1px;
+    padding-bottom: 10px;
+}
+
+body>p {
+    color: white;
+    height: 26px;
+    padding-top: 8px;
+    font-size: 12px;
+    text-align: center;
 }
